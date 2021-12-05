@@ -14,14 +14,18 @@ const images = [
 ];
 
 
-const galleryEl = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
+const fragment = document.createDocumentFragment();
+
 images.forEach(element => {
-	galleryEl.insertAdjacentHTML('afterbegin', `<li><img src = ${element.url} alt = ${element.alt} width = '480' height = '320'/></li>`);
+	fragment.append(gallery.insertAdjacentHTML('afterbegin',
+		`<li><img src = ${element.url} alt = ${element.alt} width = '480' height = '320'/></li>`));
 });
 
-const gallery = document.querySelector('.gallery')
+gallery.append(fragment)
+
 
 gallery.style.display = 'flex';
 gallery.style.flexDirection = 'row';
-gallery.style.justifyContent = 'space-evenly'
-gallery.style.listStyle = 'none'
+gallery.style.justifyContent = 'space-evenly';
+gallery.style.listStyle = 'none';
