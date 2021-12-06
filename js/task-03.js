@@ -15,15 +15,14 @@ const images = [
 
 
 const gallery = document.querySelector('.gallery');
-const fragment = document.createDocumentFragment();
+const fragment = [];
 
 images.forEach(element => {
-	fragment.append(gallery.insertAdjacentHTML('afterbegin',
-		`<li><img src = ${element.url} alt = ${element.alt} width = '480' height = '320'/></li>`));
+	fragment.push(
+		`<li><img src = ${element.url} alt = ${element.alt} width = '480' height = '320'/></li>`);
 });
 
-gallery.append(fragment)
-
+gallery.insertAdjacentHTML('afterBegin', fragment);
 
 gallery.style.display = 'flex';
 gallery.style.flexDirection = 'row';
