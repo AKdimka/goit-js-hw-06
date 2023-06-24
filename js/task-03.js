@@ -15,6 +15,38 @@ const images = [
 
 
 const gallery = document.querySelector('.gallery');
+
+const galleryMarkup = images.map(({ url, alt }) => `<li><img class='galleryItem' src=${url} alt=${alt}/></li>`).join('');
+
+gallery.innerHTML = galleryMarkup;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const gallery = document.querySelector('.gallery');
 const fragment = [];
 
 images.forEach(element => {
@@ -27,4 +59,4 @@ gallery.insertAdjacentHTML('afterBegin', fragment);
 gallery.style.display = 'flex';
 gallery.style.flexDirection = 'row';
 gallery.style.justifyContent = 'space-evenly';
-gallery.style.listStyle = 'none';
+gallery.style.listStyle = 'none'; */
