@@ -1,4 +1,51 @@
-const refs = {
+const input = document.querySelector('#name-input');
+const name = document.querySelector('#name-output');
+
+const inputChange = (event) => {
+	let inputText = event.currentTarget.value;
+
+	event.currentTarget.value !== '' ?
+		name.textContent = inputText :
+		name.textContent = 'Anonymous'
+};
+
+input.addEventListener('input', inputChange);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const refs = {
 	input: document.querySelector('#name-input'),
 	nameLabel: document.querySelector('#name-output'),
 };
@@ -11,4 +58,4 @@ function onInputChange(event) {
 	} else {
 		refs.nameLabel.textContent = 'Anonymous'
 	}
-};
+}; */
