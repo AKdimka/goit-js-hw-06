@@ -46,12 +46,6 @@ function inputChange(event) {
 
 
 
-
-
-
-
-
-
 /* const refs = {
 	rangeInput: document.querySelector('#font-size-control'),
 	textBelongInput: document.querySelector('#text'),
