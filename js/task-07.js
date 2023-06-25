@@ -1,4 +1,58 @@
-const refs = {
+const input = document.querySelector('#font-size-control');
+const text = document.querySelector('#text');
+
+text.style.fontSize = `${input.value}px`;
+
+input.addEventListener('input', inputChange);
+
+function inputChange(event) {
+	text.style.fontSize = `${event.currentTarget.value}px`
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const refs = {
 	rangeInput: document.querySelector('#font-size-control'),
 	textBelongInput: document.querySelector('#text'),
 };
@@ -11,4 +65,4 @@ const onRangeChange = (event) => {
 	refs.textBelongInput.style.fontSize = `${value}px`;
 };
 
-refs.rangeInput.addEventListener('input', onRangeChange);
+refs.rangeInput.addEventListener('input', onRangeChange); */
